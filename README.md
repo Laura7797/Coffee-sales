@@ -75,7 +75,7 @@ Packages used in the notebook are listed in `requirements.txt`.
 
 - GitHub repository: [Laura7797/Coffee-sales](https://github.com/Laura7797/Coffee-sales)
 - Main notebook demo: `notebooks/notebook.ipynb`
-- Optional interactive prototype: `Coze workflow link to be inserted here`
+- Optional interactive prototype: [`Coze workflow link to be inserted here`](https://www.coze.cn/store/agent/7626221777488298047?bot_id=true)
 - Example output figure:
 
 <img src="./figures/transaction_values_distribution.png" alt="Distribution of Transaction Values" width="700">
