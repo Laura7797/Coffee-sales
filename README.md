@@ -1,95 +1,92 @@
-# Coffee Sales Analysis
+# Coffee Sales Analysis for Small Business Decision-Making
 
-This repository presents a mini data analytics project based on coffee shop transaction records. The project explores customer demand patterns, product popularity, and pricing behaviour, then discusses how these insights could support small business decision-making.
+## 1. Problem & User
 
-The analysis was developed as coursework for `ACC102` and follows a practical workflow: define a business problem, select an appropriate dataset, clean and analyse the data in Python, visualise the findings, and reflect on limitations and possible improvements.
+This project analyses coffee shop transaction data to support more evidence-based business decisions. The main target user is a coffee shop manager or small business owner who wants practical insights on peak demand, customer spending, and product popularity.
 
-## Project Aim
+## 2. Data
 
-The project investigates how transaction data can be used to answer business-oriented questions such as:
-
-- When is the shop busiest?
-- Are weekdays and weekends different in sales volume?
-- Which drinks are the most popular?
-- What price range dominates customer purchases?
-- How can behavioural economics ideas be used to interpret the results?
-
-## Dataset
-
-- File: `Coffe_sales.csv`
-- Source used in the notebook/report: Kaggle daily coffee transactions dataset
+- Dataset: `Daily Coffee Transactions` from Kaggle
+- Access date used in the coursework: `08 April 2026`
+- Local files in this repo:
+  - `data/Coffe_sales.csv`
+  - `Coffe_sales.csv` (kept in the root folder for compatibility with the earlier notebook version)
 - Number of records analysed: `3547`
-- Main fields: transaction hour, payment type, amount, coffee name, weekday, month, date, and time
+- Key fields:
+  - `hour_of_day`
+  - `money`
+  - `coffee_name`
+  - `Weekday`
+  - `Month_name`
+  - `Time_of_Day`
+  - `Date`
 
-## Tools and Methods
+## 3. Methods
 
-- `Python`
-- `pandas` for cleaning and aggregation
-- `matplotlib` and `seaborn` for visualisation
-- `Jupyter Notebook` for analysis workflow
+The analysis was completed in Python using a Jupyter Notebook workflow.
 
-The main analysis notebook is:
+Main steps:
 
-- `Mini Assessment.ipynb`
+1. Import `pandas`, `matplotlib`, `seaborn`, and `numpy`
+2. Load the transaction dataset
+3. Check missing values and basic data structure
+4. Clean and rename columns for analysis
+5. Perform descriptive analysis on transactions, products, and price levels
+6. Analyse hourly, weekday/weekend, and monthly patterns
+7. Visualise the results using charts
+8. Summarise findings and discuss them in a business and behavioural-economics context
 
-## Key Findings
+## 4. Key Findings
 
-The current dataset supports the following descriptive findings:
+- The busiest trading hour is `10:00`, with `328` transactions.
+- Weekday sales volume is much higher than weekend sales volume: `2658` versus `889`.
+- `March` is the peak month in this dataset, with `494` transactions.
+- The two most popular drinks are `Americano with Milk` and `Latte`.
+- The strongest transaction price band is `30-50`, with `2345` purchases.
 
-1. The busiest hour is `10:00`, with `328` transactions.
-2. Weekdays are much busier than weekends: `2658` vs `889` transactions.
-3. The peak month in this dataset is `March`, with `494` transactions.
-4. The two most popular drinks are `Americano with Milk` and `Latte`.
-5. The dominant transaction price band is `30-50`, which contains `2345` purchases.
-6. Average spending is broadly similar on weekdays and weekends, so this result should be interpreted cautiously.
+## 5. How to Run
 
-## Example Visual
+1. Open `notebook.ipynb` in Jupyter Notebook, JupyterLab, or VS Code.
+2. Make sure the repo keeps the current structure, especially the `data/` folder.
+3. Run all cells from top to bottom.
+4. Review the printed outputs and figures.
 
-The repository includes a histogram showing the distribution of transaction amounts:
+Packages used in the notebook are listed in `requirements.txt`.
 
-![Distribution of Transaction Values](figures%20(amounts).png)
+## 6. Product Link / Demo
 
-## Repository Structure
+- GitHub repository: [Laura7797/Coffee-sales](https://github.com/Laura7797/Coffee-sales)
+- Main notebook demo in this local version: `notebook.ipynb`
+- Example output figure:
 
-- `Mini Assessment.ipynb` - main notebook containing data cleaning, exploratory analysis, charts, and summary insights
-- `Coffe_sales.csv` - dataset used for the analysis
-- `figures (amounts).png` - exported visual used in the report/README
-- `Reflection report.docx` - reflective commentary on the project process, limitations, and learning
-- `workflow materials.docx` - supporting workflow notes from earlier development
+![Distribution of Transaction Values](figures/transaction_values_distribution.png)
 
-## How To Run
+## 7. Limitations & Next Steps
 
-1. Open `Mini Assessment.ipynb` in Jupyter Notebook or VS Code.
-2. Make sure `Coffe_sales.csv` is in the same folder as the notebook.
-3. Run the notebook cells from top to bottom.
-4. Review the charts and summary outputs.
+Limitations:
 
-## Business Relevance
+- The dataset reflects one business context, so the findings are not fully generalisable.
+- The analysis is descriptive, not predictive.
+- Some behavioural economics discussion is interpretive and should not be treated as causal proof.
+- External factors such as weather, promotions, store location, and customer demographics are not included.
 
-This project is designed for a coffee shop manager or a small business owner who wants to make more evidence-based decisions. The results could help with:
+Next steps:
 
-- staff scheduling during peak demand periods
-- product focus and menu planning
-- pricing strategy discussions
-- promotional timing and targeting
+- Add more visual outputs into the `figures/` folder
+- Extend the analysis with forecasting or segmentation methods
+- Compare multiple stores or multiple periods for stronger conclusions
+- Build a cleaner interactive demo if the coursework later requires a product layer
 
-## Limitations
+## Repo Structure
 
-- The dataset appears to represent a single business context, so the findings are not universally generalisable.
-- The project is descriptive rather than predictive.
-- Some behavioural economics interpretations are exploratory and should not be treated as causal claims.
-- The dataset has limited external variables, such as weather, promotions, or store location.
+- `README.md`
+- `notebook.ipynb`
+- `Mini_Assessment_fixed.ipynb`
+- `data/`
+- `figures/`
+- `requirements.txt`
+- `Reflection report.docx`
 
-## Coursework Notes
+## Coursework Note
 
-This repository is intended to support the `track2` direction of the coursework, where the emphasis is on a documented Python-based analysis project with supporting evidence, visuals, and reflection.
-
-## AI Use Disclosure
-
-AI tools were used during the coursework process to help with:
-
-- debugging Python and workflow logic
-- checking the wording of economic interpretations
-- improving clarity of written explanations
-
-All outputs were reviewed and adapted to fit the actual dataset and project requirements.
+This repository is prepared for the `track2` direction, focusing on a documented Python analysis project with a clear GitHub presentation.
