@@ -49,7 +49,8 @@ Main steps:
 1. Open `notebook.ipynb` in Jupyter Notebook, JupyterLab, or VS Code.
 2. Make sure the repo keeps the current structure, especially the `data/` folder.
 3. Run all cells from top to bottom.
-4. Review the printed outputs and figures.
+4. Running the notebook will automatically export the main charts into the `figures/` folder.
+5. Review the printed outputs and saved figures.
 
 Packages used in the notebook are listed in `requirements.txt`.
 
@@ -79,3 +80,17 @@ Next steps:
 - Extend the analysis with forecasting or segmentation methods
 - Compare multiple stores or multiple periods for stronger conclusions
 - Build a cleaner interactive demo if the coursework later requires a product layer
+
+## Repo Structure
+
+- `README.md`
+- `notebook.ipynb`
+- `Mini_Assessment_fixed.ipynb`
+- `data/`
+- `figures/`
+- `requirements.txt`
+- `Reflection report.docx`
+
+## Coursework Note
+
+This repository is prepared for the `track2` direction, focusing on a documented Python analysis project with a clear GitHub presentation.
