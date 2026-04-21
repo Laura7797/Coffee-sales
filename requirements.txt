@@ -1,10 +1,7 @@
-# Core packages used in notebook.ipynb
 pandas>=2.0
 matplotlib>=3.7
 seaborn>=0.12
 numpy>=1.24
-
-# Notebook environment
 notebook>=7.0
 jupyterlab>=4.0
 ipykernel>=6.0
