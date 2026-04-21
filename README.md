@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-This project analyses coffee shop transaction data to support more evidence-based decision-making for small business managers. Using the Kaggle `Daily Coffee Transactions` dataset, the notebook applies Python-based cleaning, descriptive analysis, visualisation, and revenue analysis to identify demand and sales patterns. The results show a clear weekday sales advantage, a 10:00 peak transaction hour, strong demand in the `30-50` price band, and March as the strongest month by transaction volume and revenue. These findings support practical actions in staffing, pricing, promotions, and product prioritisation.
+This project analyses a coffee sales dataset to identify sales patterns that support evidence-based decision-making for small businesses. The findings show that weekdays generate substantially more transactions than weekends, `10:00` is the busiest hour, the `30-50` price band is the most popular, and `March` records the highest revenue. The analysis therefore provides practical evidence for staffing, pricing, product focus, and promotion planning. The repository presents these results through a reproducible Python notebook workflow.
 
 ## 1. Problem & User
 
@@ -48,12 +48,18 @@ Main steps:
 - The strongest transaction price band is `30-50`, with `2345` purchases.
 - The average order value is `$31.65`, and the highest monthly revenue occurs in `March`.
 
-## Business Recommendations
+![Hourly transaction distribution](./figures/hourly_transactions.png)
 
-- Increase staffing coverage around the `10:00` peak period to reduce waiting time and support service quality.
-- Keep the `30-50` price band as the core pricing zone because it captures the strongest share of demand.
-- Use weekend promotions to stimulate volume, since weekday transactions clearly exceed weekend transactions while average spending remains similar.
-- Prioritise best-selling drinks such as `Americano with Milk` and `Latte` in menu visibility, stock planning, and campaign design.
+![Monthly revenue trend](./figures/monthly_revenue_trend.png)
+
+### Business Recommendations
+
+- Increase staffing coverage between `09:00` and `11:00` because demand peaks at `10:00`, and faster service during the busiest trading window can reduce queueing and lost sales.
+- Prioritise weekday staffing and inventory preparation because weekday traffic is substantially higher than weekend traffic, making labour allocation more efficient when matched to observed demand.
+- Keep the `30-50` range as the core pricing band because it captures the strongest share of purchases and provides the clearest basis for bundle design or menu positioning.
+- Use targeted weekend promotions because weekend transaction volume is weaker than weekday volume, so selective offers can stimulate demand without weakening prices during stronger trading periods.
+- Feature `Americano with Milk` and `Latte` more prominently because their popularity makes them strong anchor products for upselling, combo offers, and stock planning.
+- Schedule seasonal campaigns before and during `March` because it is the strongest month for both transactions and revenue, making promotional timing more likely to convert into sales.
 
 ## 5. How to Run
 
@@ -69,12 +75,15 @@ Packages used in the notebook are listed in `requirements.txt`.
 
 - GitHub repository: [Laura7797/Coffee-sales](https://github.com/Laura7797/Coffee-sales)
 - Main notebook demo: `notebooks/notebook.ipynb`
+- Optional interactive prototype: `Coze workflow link to be inserted here`
 - Example output figure:
 
 <img src="./figures/transaction_values_distribution.png" alt="Distribution of Transaction Values" width="700">
 
 If the image does not render in a local preview, open it directly from:
 `figures/transaction_values_distribution.png`
+
+The Coze workflow is included only as a supplementary interactive prototype. The main coursework product remains the Python notebook and the documented evidence presented in this repository.
 
 ## 7. Limitations & Next Steps
 
