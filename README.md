@@ -86,7 +86,3 @@ Next steps:
 - `figures/`
 - `requirements.txt`
 - `Reflection report.docx`
-
-## Coursework Note
-
-This repository is prepared for the `track2` direction, focusing on a documented Python analysis project with a clear GitHub presentation.
