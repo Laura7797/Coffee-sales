@@ -9,8 +9,7 @@ This project analyses coffee shop transaction data to support more evidence-base
 - Dataset: `Daily Coffee Transactions` from Kaggle
 - Access date used in the coursework: `08 April 2026`
 - Local files in this repo:
-  - `data/Coffe_sales.csv`
-  - `Coffe_sales.csv` (kept in the root folder for compatibility with the earlier notebook version)
+  - `Data(Coffe sales).csv`
 - Number of records analysed: `3547`
 - Key fields:
   - `hour_of_day`
@@ -47,9 +46,9 @@ Main steps:
 ## 5. How to Run
 
 1. Open `notebook.ipynb` in Jupyter Notebook, JupyterLab, or VS Code.
-2. Make sure the repo keeps the current structure, especially the `data/` folder.
+2. Keep the current file names in the root directory, especially `Data(Coffe sales).csv`.
 3. Run all cells from top to bottom.
-4. Running the notebook will automatically export the main charts into the `figures/` folder.
+4. The main visual outputs are also available as PNG files in the repository root.
 5. Review the printed outputs and saved figures.
 
 Packages used in the notebook are listed in `requirements.txt`.
@@ -60,10 +59,10 @@ Packages used in the notebook are listed in `requirements.txt`.
 - Main notebook demo in this local version: `notebook.ipynb`
 - Example output figure:
 
-<img src="./figures/transaction_values_distribution.png" alt="Distribution of Transaction Values" width="700">
+<img src="./transaction_values_distribution.png" alt="Distribution of Transaction Values" width="700">
 
 If the image does not render in a local preview, open it directly from:
-`figures/transaction_values_distribution.png`
+`transaction_values_distribution.png`
 
 ## 7. Limitations & Next Steps
 
@@ -76,7 +75,7 @@ Limitations:
 
 Next steps:
 
-- Add more visual outputs into the `figures/` folder
+- Add more visual outputs or organise the current PNG files into folders if platform settings allow
 - Extend the analysis with forecasting or segmentation methods
 - Compare multiple stores or multiple periods for stronger conclusions
 - Build a cleaner interactive demo if the coursework later requires a product layer
@@ -85,11 +84,14 @@ Next steps:
 
 - `README.md`
 - `notebook.ipynb`
-- `Mini_Assessment_fixed.ipynb`
-- `data/`
-- `figures/`
+- `Data(Coffe sales).csv`
 - `requirements.txt`
-- `Reflection report.docx`
+- `transaction_values_distribution.png`
+- `hourly_transactions.png`
+- `monthly_transaction_trend.png`
+- `average_spending_by_hour.png`
+- `price_range_demand.png`
+- `drink_price_vs_popularity.png`
 
 ## Coursework Note
 
