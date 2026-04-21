@@ -59,7 +59,10 @@ Packages used in the notebook are listed in `requirements.txt`.
 - Main notebook demo in this local version: `notebook.ipynb`
 - Example output figure:
 
-![Distribution of Transaction Values](figures/transaction_values_distribution.png)
+<img src="./figures/transaction_values_distribution.png" alt="Distribution of Transaction Values" width="700">
+
+If the image does not render in a local preview, open it directly from:
+`figures/transaction_values_distribution.png`
 
 ## 7. Limitations & Next Steps
 
@@ -76,3 +79,17 @@ Next steps:
 - Extend the analysis with forecasting or segmentation methods
 - Compare multiple stores or multiple periods for stronger conclusions
 - Build a cleaner interactive demo if the coursework later requires a product layer
+
+## Repo Structure
+
+- `README.md`
+- `notebook.ipynb`
+- `Mini_Assessment_fixed.ipynb`
+- `data/`
+- `figures/`
+- `requirements.txt`
+- `Reflection report.docx`
+
+## Coursework Note
+
+This repository is prepared for the `track2` direction, focusing on a documented Python analysis project with a clear GitHub presentation.
