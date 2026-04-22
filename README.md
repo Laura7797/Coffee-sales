@@ -74,21 +74,7 @@ Main steps:
 
 Packages used in the notebook are listed in `requirements.txt`.
 
-## 6. Product Link / Demo
-
-- GitHub repository: [Laura7797/Coffee-sales](https://github.com/Laura7797/Coffee-sales)
-- Main notebook demo: `notebooks/notebook.ipynb`
-- Optional interactive prototype: [`Coze workflow link to be inserted here`](https://www.coze.cn/store/agent/7626221777488298047?bot_id=true)
-- Example output figure:
-
-<img src="./figures/transaction_values_distribution.png" alt="Distribution of Transaction Values" width="700">
-
-If the image does not render in a local preview, open it directly from:
-`figures/transaction_values_distribution.png`
-
-The Coze workflow is included only as a supplementary interactive prototype. The main coursework product remains the Python notebook and the documented evidence presented in this repository.
-
-## 7. Limitations & Next Steps
+## 6. Limitations & Next Steps
 
 Limitations:
 
