@@ -29,15 +29,16 @@ The analysis was completed in Python using a Jupyter Notebook workflow.
 
 Main steps:
 
-1. Import `pandas`, `matplotlib`, `seaborn`, and `numpy`
+1. Import `pandas`, `matplotlib`, `seaborn`, `numpy`, and `scipy`
 2. Load the transaction dataset using a relative path
 3. Check missing values and basic data structure
 4. Clean and rename columns for analysis
 5. Perform descriptive analysis on transactions, products, and price levels
 6. Analyse hourly, weekday/weekend, and monthly transaction patterns
 7. Visualise the main outputs using exported charts
-8. Add a revenue analysis section covering monthly revenue and average order value
-9. Summarise findings and interpret them in a business context
+8. Test weekday and weekend transaction values using a Mann-Whitney U comparison
+9. Segment products by transaction frequency and total revenue
+10. Summarise findings and interpret them in a business context
 
 ## 4. Key Findings
 
@@ -46,20 +47,22 @@ Main steps:
 - `March` is the peak month in this dataset, with `494` transactions.
 - The two most popular drinks are `Americano with Milk` and `Latte`.
 - The strongest transaction price band is `30-50`, with `2345` purchases.
+- A Mann-Whitney U test suggests that weekday and weekend transaction values are not statistically different at the 5% level, even though weekday transaction volume is much higher.
+- `Latte`, `Americano with Milk`, `Cappuccino`, and `Americano` behave as both high-frequency and high-revenue products in the product segmentation view.
 - The average order value is `$31.65`, and the highest monthly revenue occurs in `March`.
 
 ![Hourly transaction distribution](./figures/hourly_transactions.png)
 
-![Monthly revenue trend](./figures/monthly_revenue_trend.png)
+![Product segmentation by frequency and revenue](./figures/product_segmentation_frequency_revenue.png)
 
 ### Business Recommendations
 
 - Increase staffing coverage between `09:00` and `11:00` because demand peaks at `10:00`, and faster service during the busiest trading window can reduce queueing and lost sales.
-- Prioritise weekday staffing and inventory preparation because weekday traffic is substantially higher than weekend traffic, making labour allocation more efficient when matched to observed demand.
+- Prioritise weekday staffing and inventory preparation because weekday traffic is substantially higher than weekend traffic, making labour allocation more efficient when matched to observed demand patterns.
 - Keep the `30-50` range as the core pricing band because it captures the strongest share of purchases and provides the clearest basis for bundle design or menu positioning.
-- Use targeted weekend promotions because weekend transaction volume is weaker than weekday volume, so selective offers can stimulate demand without weakening prices during stronger trading periods.
-- Feature `Americano with Milk` and `Latte` more prominently because their popularity makes them strong anchor products for upselling, combo offers, and stock planning.
-- Schedule seasonal campaigns before and during `March` because it is the strongest month for both transactions and revenue, making promotional timing more likely to convert into sales.
+- Use targeted weekend promotions to lift traffic rather than assuming higher willingness to pay, because statistical testing suggests weekday and weekend transaction values are very similar.
+- Feature `Latte`, `Americano with Milk`, `Cappuccino`, and `Americano` more prominently because they combine strong purchase frequency with high revenue contribution.
+- Schedule seasonal campaigns before and during `March` because it is the strongest month for both transactions and revenue, while treating this as operational timing evidence rather than a forecasting result.
 
 ## 5. How to Run
 
@@ -91,13 +94,14 @@ Limitations:
 
 - The dataset reflects one business context, so the findings are not fully generalisable.
 - The analysis is descriptive rather than predictive.
-- Some behavioural economics discussion is interpretive and should not be treated as causal proof.
+- Some behavioural interpretations are exploratory and should not be considered causal evidence.
 - External factors such as weather, promotions, store location, and customer demographics are not included.
 
 Next steps:
 
-- Extend the analysis with forecasting or segmentation methods
+- Extend the project into forecasting only after a richer multi-period dataset is available
 - Compare multiple stores or multiple periods for stronger conclusions
+- Add more business variables so that statistical comparison can be extended beyond transaction values
 - Build a cleaner interactive demo if the coursework later requires a product layer
 
 ## Repo Structure
@@ -112,7 +116,8 @@ Next steps:
 - `figures/average_spending_by_hour.png`
 - `figures/price_range_demand.png`
 - `figures/drink_price_vs_popularity.png`
-- `figures/monthly_revenue_trend.png`
+- `figures/weekday_weekend_statistical_comparison.png`
+- `figures/product_segmentation_frequency_revenue.png`
 
 ## Coursework Note
 
